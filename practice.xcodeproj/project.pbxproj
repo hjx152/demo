@@ -14,6 +14,7 @@
 		E79B8AC525A45624004A3808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79B8AC325A45624004A3808 /* LaunchScreen.storyboard */; };
 		E79B8AC825A45624004A3808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B8AC725A45624004A3808 /* main.m */; };
 		E79B8AD225A45624004A3808 /* practiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B8AD125A45624004A3808 /* practiceTests.m */; };
+		E7BAAD6B25A5ABC4009E7F7F /* demo.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BAAD6A25A5ABC4009E7F7F /* demo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		E79B8ACD25A45624004A3808 /* practiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E79B8AD125A45624004A3808 /* practiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = practiceTests.m; sourceTree = "<group>"; };
 		E79B8AD325A45624004A3808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7BAAD6925A5ABC4009E7F7F /* demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demo.h; sourceTree = "<group>"; };
+		E7BAAD6A25A5ABC4009E7F7F /* demo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				E79B8AC325A45624004A3808 /* LaunchScreen.storyboard */,
 				E79B8AC625A45624004A3808 /* Info.plist */,
 				E79B8AC725A45624004A3808 /* main.m */,
+				E7BAAD6925A5ABC4009E7F7F /* demo.h */,
+				E7BAAD6A25A5ABC4009E7F7F /* demo.m */,
 			);
 			path = practice;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 			files = (
 				E79B8ABD25A45622004A3808 /* ViewController.m in Sources */,
 				E79B8AC825A45624004A3808 /* main.m in Sources */,
+				E7BAAD6B25A5ABC4009E7F7F /* demo.m in Sources */,
 				E79B8ABA25A45622004A3808 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

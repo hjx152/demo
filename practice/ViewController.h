@@ -10,15 +10,15 @@
 
 @interface ViewController : UIViewController
 
+<UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
 {
     IBOutlet UILabel *myLabel;
+    
+    UITextField *myTextField;
+    UIPickerView *myPickerView;
+    NSArray *pickerArray;
 }
 
-+ (id)buttonWithType:(UIButtonType)buttonType;
-- (UIImage *)backgroundImageForState:(UIControlState)state;
-- (UIImage *)imageForState:(UIControlState)state;
-- (void)setTitle:(NSString *)title forState:(UIControlState)state;
-- (void)addTarget:(id)target action:(SEL)action forControlEvents: (UIControlEvents) controlEvents;
 
 //@property
 //IBOutlet UILabel *myLabel;
