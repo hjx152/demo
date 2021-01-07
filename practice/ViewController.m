@@ -205,6 +205,10 @@ numberOfRowsInComponent:(NSInteger)component{
     
 }
 
+- (void)toPage{
+    
+}
+
 - (void)change:(UIButton *)button{
 //    UIButton *btn = (UIButton *)sender;
     button.selected = !button.selected;
