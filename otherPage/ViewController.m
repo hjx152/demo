@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "ViewCon.h"
 //#import "Page.h"
-#import "../Page1/WenZi.h"
+//#import "../Page1/WenZi.h"
 
 @interface ViewController ()
 {
@@ -78,6 +78,19 @@
     ViewCon *v1 = [[ViewCon alloc]init];
     
     [self.navigationController pushViewController:v1 animated:YES];
+ 
+    NSArray *array= [NSArray arrayWithObjects:@"tom", @"jack",@"java",nil];
+    
+    int count = [array count];
+    NSLog(@"count%d",count);
+    
+    
+    NSMutableArray *arr = [NSMutableArray arrayWithCapacity:0];
+    
+    [arr addObject:@"abc"];
+    [arr addObjectsFromArray:@[@"h啊哈",@"发丝"]];
+    
+    
     v1.MyStr = self.MyText.text;
     
     
