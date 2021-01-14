@@ -13,5 +13,10 @@
     NSMutableArray *arr;
 }
 
+@property(nonatomic,copy) NSString *pname;
+@property(nonatomic,assign) int age;
+-(instancetype)initWithPname:(NSString *)pname andage:(int)age;
++(instancetype)personWithinit:(NSString *)pname andage:(int)age;
+
 @end
 
