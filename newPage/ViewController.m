@@ -10,7 +10,7 @@
 #import "View.h"
 #import "../size/PrefixHeader.pch"
 #import "../Extension/URL.h"
-//#import <AFNetworking.h>
+#import <AFNetworking.h>
 
 @interface ViewController ()
 {
@@ -47,6 +47,9 @@
     
     
     [self.view setBackgroundColor:[UIColor whiteColor]];
+    
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    
     
     NSArray *array= [NSArray arrayWithObjects:@"tom", @"jack",@"java",nil];
 
@@ -144,14 +147,14 @@
     
 }
 
-//- (void)test{
-//    NSString *urlStr = @"/tyyh/serviceWorkplaceInfo/cantCountDataList";
-//    NSString *finalUrl = [base stringByAppendingString:urlStr];
-//    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+- (void)test{
+    NSString *urlStr = @"/tyyh/serviceWorkplaceInfo/cantCountDataList";
+    NSString *finalUrl = [base stringByAppendingString:urlStr];
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
 //    AFURLSessionManager *manager = [[AFURLSessionManager alloc]initWithSessionConfiguration:configuration];
-//    NSDictionary *param =@{@"id":1};
-//    NSURLRequest *request = [[AFHTTPRequestSerializer serializer]requestWithMethod:@"GET" URLString:finalUrl parameters:param error:nil];
-//}
+    NSDictionary *param =@{@"id":"1"};
+    NSURLRequest *request = [[AFHTTPRequestSerializer serializer]requestWithMethod:@"GET" URLString:finalUrl parameters:param error:nil];
+}
 
 - (void)login:(UIButton *)button{
 //    int userName = 1;
@@ -229,6 +232,7 @@
             NSLog(@"%@",v5);
             self->n1 = [[UILabel alloc] initWithFrame:CGRectMake(60, 300 + y, DEV_BSIZE/3, 30)];
             [self->n1 setText:[@"name:" stringByAppendingString:v5.pname]];
+            
             self->n1.backgroundColor = [UIColor greenColor];
             [self->n1 setFont:[UIFont systemFontOfSize:14.0f]];
             [self.view addSubview:self->n1];
