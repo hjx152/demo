@@ -10,7 +10,7 @@
 #import "View.h"
 #import "../size/PrefixHeader.pch"
 #import "../Extension/URL.h"
-#import <AFNetworking.h>
+//#import <AFNetworking.h>
 
 @interface ViewController ()
 {
@@ -147,14 +147,14 @@
     
 }
 
-- (void)test{
-    NSString *urlStr = @"/tyyh/serviceWorkplaceInfo/cantCountDataList";
-    NSString *finalUrl = [base stringByAppendingString:urlStr];
-    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+//- (void)test{
+//    NSString *urlStr = @"/tyyh/serviceWorkplaceInfo/cantCountDataList";
+//    NSString *finalUrl = [base stringByAppendingString:urlStr];
+//    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
 //    AFURLSessionManager *manager = [[AFURLSessionManager alloc]initWithSessionConfiguration:configuration];
-    NSDictionary *param =@{@"id":"1"};
-    NSURLRequest *request = [[AFHTTPRequestSerializer serializer]requestWithMethod:@"GET" URLString:finalUrl parameters:param error:nil];
-}
+//    NSDictionary *param =@{@"id":"1"};
+//    NSURLRequest *request = [[AFHTTPRequestSerializer serializer]requestWithMethod:@"GET" URLString:finalUrl parameters:param error:nil];
+//}
 
 - (void)login:(UIButton *)button{
 //    int userName = 1;
@@ -207,6 +207,19 @@
     
     y = y + 30;
     NSLog(@"i=%d",y);
+    
+    // 查找字符串
+    NSString *str = @"objective";
+    if ([str containsString:@"c"]) {
+        NSLog(@"con有");
+        //containString适用于ios8系统，在ios7系统下会崩溃
+    }
+    NSRange range = [str rangeOfString:@"c"];
+    if (range.location != NSNotFound) {
+        //ios7系统下也适用
+        NSLog(@"ran有");
+    }
+
     
 //    va_list nameList = {
 //        [labelName:@"jack"];
